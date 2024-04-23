@@ -1,0 +1,25 @@
+[user]
+	name = Nathan Huey
+	email = nate.huey4@gmail.com
+[core]
+	excludefile = /Users/nathanhuey/.DS_Store
+[init]
+	DefaultBranch = main
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    wt = worktree
+    wtl = worktree list
+    wtb = "!f() { git branch -f $1 $2; git worktree add $1 $1; }; f"
+    wtbm = "!f() { git branch -f $1 origin/$(git remote show origin | awk '/HEAD branch/ {print $NF}'); git worktree add $1 $1; }; f"
+    wtr = "!f() { git worktree remove -f $1; git branch -D $1; }; f"
+    pr = !git fetch -f upstream refs/pull/$1/head:refs/remotes/upstream/pr/$1/head && git checkout -B $1 upstream/pr/$1/head && :
+    pu = !"git push -u origin $(git rev-parse --abbrev-ref HEAD)"
+[include]
+	path = /tools/git/config
+	path = /tools/git/config
+	path = /tools/git/config
+	path = /Users/nathanhuey/Desktop/DigitalBiology/dbSDK/tools/git/config
+	path = /Users/nathanhuey/Desktop/DigitalBiology/dbSDK/tools/git/config
+[maintenance]
+	repo = /Users/nathanhuey/zsh-plugins/znap
+	repo = /Users/nathanhuey/zsh-plugins/marlonrichert/zsh-autocomplete
