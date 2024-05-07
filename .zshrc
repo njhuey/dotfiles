@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# alias python="python3"
+alias python="python3"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
