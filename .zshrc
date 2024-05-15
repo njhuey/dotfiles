@@ -9,6 +9,7 @@ source ~/zsh-plugins/znap/znap.zsh
 
 # Aliases
 alias digitbio="cd ~/Desktop/DigitalBiology/dbSDK_deprecated/ && conda activate digitbio"
+alias fman="compgen -c | fzf | xargs man"
 
 # zsh autocomplete
 # znap source marlonrichert/zsh-autocomplete
