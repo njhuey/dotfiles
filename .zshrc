@@ -7,6 +7,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # Start Znap
 source ~/zsh-plugins/znap/znap.zsh
 
+# Aliases
+alias digitbio="cd ~/Desktop/DigitalBiology/dbSDK_deprecated/ && conda activate digitbio"
+
 # zsh autocomplete
 # znap source marlonrichert/zsh-autocomplete
 
