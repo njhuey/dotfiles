@@ -3,6 +3,7 @@
 	email = nate.huey4@gmail.com
 [core]
 	excludefile = /Users/nathanhuey/.DS_Store
+	editor = nvim
 [init]
 	DefaultBranch = main
 [branch]

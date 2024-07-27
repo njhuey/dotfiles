@@ -7,13 +7,15 @@ export ZSH="$HOME/.oh-my-zsh"
 # Aliases
 alias fman="compgen -c | fzf | xargs man"
 alias cpwd="pwd | awk '{printf \"%s\", \$0}' | pbcopy"
+alias digitbio="conda activate digitbio"
+
 
 # 100M lines / 2Gb 
 HISTSIZE=100000000
 HISTFILESIZE=2000000000
 
-# Digitbio worktree
-WORKTREE_ROOT="${HOME}/dev/digitbio/dbSDK"
+# Digital Biology worktree
+WORKTREE_ROOT="${HOME}/dev/digital_biology/dbSDK"
 INITIAL_TARGET="//tools:workspace_test"
 
 # Convenience no-op function for when we want to print a message only in bash
@@ -255,3 +257,6 @@ source $ZSH/oh-my-zsh.sh
 alias python="python3"
 
 eval "$(conda "shell.$(basename "${SHELL}")" hook)"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
